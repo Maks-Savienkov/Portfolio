@@ -1,1 +1,7 @@
 rootProject.name = 'JavaGradleProjects'
+
+include 'ticket-purchase-app'
+include 'ticket-purchase-app:domain'
+findProject(':ticket-purchase-app:domain')?.name = 'domain'
+include 'ticket-purchase-app:web-app'
+findProject(':ticket-purchase-app:web-app')?.name = 'web-app'
