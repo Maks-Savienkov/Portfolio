@@ -1,0 +1,13 @@
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'java-library'
+    apply plugin: 'idea'
+
+    group = 'max.sav.edu'
+
+    idea {
+        module {
+            sourceDirs += file('src/main/java')
+        }
+    }
+}
